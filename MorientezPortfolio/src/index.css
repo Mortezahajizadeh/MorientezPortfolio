@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ّ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --prim-color: #bff747;
+  --white-color: #fff;
+  --black-color: #000;
+  --light-color: #3d3e3c;
+
+  --poppins: "Poppins";
+
+  --transition-regular: 0.3s;
+  --transition-slow: 0.6s;
+}
+
+body {
+  overflow-x: hidden !important;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+/* Navbar */
+
+.nav-container {
+  z-index: 9999;
+}
+.logo span {
+  color: var(--prim-color);
+}
+.nav-menu li a {
+  position: relative;
+  transition: var(--transition-regular);
+}
+.nav-menu li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--prim-color);
+  transition: var(--transition-regular);
+}
+.nav-menu li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--prim-color);
+  transition: var(--transition-regular);
+}
+.nav-menu li a:hover:after,
+.nav-menu li a:hover:before {
+  width: 100%;
+}
+.nav-menu li a:hover {
+  color: var(--prim-color) !important;
+}
+.hero-social-icon i {
+  font-size: 1.5rem;
+  color: var(--prim-color);
+  transition: var(--transition-regular);
+}
+.hero-social-icon i:hover {
+  color: var(--white-color);
+  cursor: pointer;
+}
+.hero-social-icon {
+  flex-wrap: nowrap !important;
+}
+
+@media (max-width: 991px) {
+  .hero-social-icon {
+    display: none !important;
+  }
+}
+
+/* Hero Section  */
+
+.video-bg {
+  position: relative;
+}
+.video-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 60%;
+}
+.hero-content h5 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.hero-content h1 {
+  font-size: 4.5rem;
+  font-weight: 300 !important;
+  color: var(--white-color);
+}
+.hero-content h1 span {
+  font-weight: 600;
+  color: var(--prim-color);
+}
+.floting-img .floting-img-1,
+.floting-img .floting-img-2 {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.floting-img .floting-img-1,
+.floting-img .floting-img-2 {
+  background-color: var(--prim-color);
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 100%;
+  animation: Anim-TB 3s forwards linear infinite;
+}
+.floting-img-2 {
+  left: 66% !important;
+  animation-delay: 1.5s !important;
+}
+.floting-img .floting-img-1 img {
+  width: 100%;
+  height: 100%;
+}
+.floting-img .floting-img-1:after,
+.floting-img .floting-img-2:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: var(--white-color);
+  border-radius: 100%;
+  z-index: -1;
+  transition: var(--transition-regular);
+}
+.floting-img .floting-img-1:hover:after,
+.floting-img .floting-img-2:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes Anim-TB {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.floting-text span {
+  background-color: var(--prim-color);
+  color: var(--black-color);
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 600;
+  animation: Anim-LR 3s forwards linear infinite !important;
+}
+.floting-text span:nth-child(2) {
+  top: 80%;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+@keyframes Anim-LR {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(50px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
