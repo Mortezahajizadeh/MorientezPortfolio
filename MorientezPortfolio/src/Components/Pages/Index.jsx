@@ -10,6 +10,7 @@ import logo3 from "./../../assets/client-logo-3.svg";
 import logo4 from "./../../assets/client-logo-4.svg";
 import logo5 from "./../../assets/client-logo-5.svg";
 import logo6 from "./../../assets/client-logo-6.svg";
+import about1 from "./../../assets/about-img-1.jpg";
 function Index() {
   return (
     <>
@@ -48,6 +49,41 @@ function Index() {
                     <span>Graphic Design</span>
                 </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* Marquee Logo */}
+      <div className="hero-marquee position-absolute">
+        <marquee behavior="alternate" direction="">
+          <img src={logo1} className="img-fluid ms-5" alt="" />
+          <img src={logo2} className="img-fluid ms-5" alt="" />
+          <img src={logo3} className="img-fluid ms-5" alt="" />
+          <img src={logo4} className="img-fluid ms-5" alt="" />
+          <img src={logo5} className="img-fluid ms-5" alt="" />
+          <img src={logo6} className="img-fluid ms-5" alt="" />
+          <img src={logo1} className="img-fluid ms-5" alt="" />
+          <img src={logo2} className="img-fluid ms-5" alt="" />
+          <img src={logo3} className="img-fluid ms-5" alt="" />
+          <img src={logo4} className="img-fluid ms-5" alt="" />
+          <img src={logo5} className="img-fluid ms-5" alt="" />
+          <img src={logo6} className="img-fluid ms-5" alt="" />
+          <img src={logo1} className="img-fluid ms-5" alt="" />
+          <img src={logo2} className="img-fluid ms-5" alt="" />
+          <img src={logo3} className="img-fluid ms-5" alt="" />
+          <img src={logo4} className="img-fluid ms-5" alt="" />
+          <img src={logo5} className="img-fluid ms-5" alt="" />
+          <img src={logo6} className="img-fluid ms-5" alt="" />
+        </marquee>
+      
+      </div>
+      {/* About */}
+      <div className="large-section pt-5">
+        <div className="container my-5 py-5">
+          <div className="row">
+            <div className="col-leg-6">
+              <img src={about1} alt="" />
+            </div>
+            <div className="col-leg-6"></div>
           </div>
         </div>
       </div>
