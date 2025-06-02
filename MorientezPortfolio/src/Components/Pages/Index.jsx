@@ -11,6 +11,13 @@ import logo4 from "./../../assets/client-logo-4.svg";
 import logo5 from "./../../assets/client-logo-5.svg";
 import logo6 from "./../../assets/client-logo-6.svg";
 import about1 from "./../../assets/about-img-1.jpg";
+import about2 from "./../../assets/about-img-2.jpg";
+import aboutCircle from "./../../assets/about-more-circle.svg";
+import aboutIcon1 from "./../../assets/icon-about-agency-1.svg";
+import aboutIcon2 from "./../../assets/icon-about-agency-2.svg";
+import aboutclient from "./../../assets/author-image.jpg";
+import btnArrow from "./../../assets/btn-arrow.svg";
+
 function Index() {
   return (
     <>
@@ -31,23 +38,23 @@ function Index() {
               </h5>
               <h1>
                 Hire Top professionals to <br /> Transform Your{" "}
-                <span>Ideas info reality</span>
+                <span>Ideas into reality</span>
               </h1>
             </div>
             <div className="hero-image mt-5">
-                <img src={hero} className="img-fluid" alt="" />
-                <div className="floting-img">
-                    <div className="floting-img-1">
-                        <img src={heroIcon1} className="img-fluid" alt="" />
-                    </div>
-                    <div className="floting-img-2">
-                        <img src={heroIcon2} className="img-fluid" alt="" />
-                    </div>
+              <img src={hero} className="img-fluid" alt="" />
+              <div className="floting-img">
+                <div className="floting-img-1">
+                  <img src={heroIcon1} className="img-fluid" alt="" />
                 </div>
-                <div className="floting-text">
-                    <span>Web Developer</span>
-                    <span>Graphic Design</span>
+                <div className="floting-img-2">
+                  <img src={heroIcon2} className="img-fluid" alt="" />
                 </div>
+              </div>
+              <div className="floting-text">
+                <span>Web Developer</span>
+                <span>Graphic Design</span>
+              </div>
             </div>
           </div>
         </div>
@@ -74,16 +81,41 @@ function Index() {
           <img src={logo5} className="img-fluid ms-5" alt="" />
           <img src={logo6} className="img-fluid ms-5" alt="" />
         </marquee>
-      
       </div>
       {/* About */}
       <div className="large-section pt-5">
         <div className="container my-5 py-5">
           <div className="row">
             <div className="col-leg-6">
-              <img src={about1} alt="" />
+              <div className="d-flex gap-3">
+                <img src={about1} className="img-fluid rounded" alt="" />
+                <div className="d-flex flex-column gap-4">
+                  <img
+                    src={aboutCircle}
+                    className="img-fluid about-small-img1"
+                    alt=""
+                  />
+                  <img
+                    src={about2}
+                    className="img-fluid rounded about-small-img2"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-leg-6"></div>
+            <div className="col-leg-6">
+              <div className="about-content">
+                <div className="section-title">
+                  <h5>
+                    <img src={titleShape} className="img-fluid me-2" alt="" />{" "}
+                    welcome to our freelance solutions
+                  </h5>
+                  <h1>
+                    Driving <span>growth</span> through smarter SEO
+                  </h1>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

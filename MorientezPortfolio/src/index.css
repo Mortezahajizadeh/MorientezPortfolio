@@ -125,7 +125,7 @@ body {
 }
 .hero-content h1 span {
   font-weight: 600;
-  color: var(--prim-color);
+  color: var(--prim-color); 
 }
 .floting-img .floting-img-1,
 .floting-img .floting-img-2 {
@@ -256,8 +256,8 @@ body {
   .hero-marquee{
     top: 125%;
   }
-  .hero-content h1 {
-    font-style: 3.5rem;
+  .hero-content h1{
+    font-size: 3.5rem;
   }
   .floting-img-1{
     left: 15% !important;
@@ -277,7 +277,7 @@ body {
     background-color: var(--black-color);
   }
   .hero-content h1 {
-    font-style: 3rem;
+    font-size: 3rem;
   }
   .floting-img-1{
     left: 10% !important;
@@ -297,7 +297,7 @@ body {
     top: 110%;
   }
   .hero-content h1 {
-    font-style: 2.3rem;
+    font-size: 2.3rem;
   }
   .floting-img-1{
     top: 35% !important;
@@ -315,7 +315,7 @@ body {
   }
 }
 
-/* 575px */
+/* 767px */
 
 @media (max-width:767px) {
   .video-bg{
@@ -325,7 +325,7 @@ body {
     top: 100%;
   }
   .hero-content h1 {
-    font-style: 1.8rem;
+    font-size: 1.8rem;
   }
   .floting-img-1{
     top: 35% !important;
@@ -339,3 +339,4 @@ body {
     display: none;
   }
 }
+
